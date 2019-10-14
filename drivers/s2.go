@@ -67,7 +67,7 @@ func (s *S2fence) Get(coordinate geo.Coordinate) (matches []*geo.Feature) {
 }
 
 type cover struct {
-	feature *geo.Feature
+	feature  *geo.Feature
 	interior map[s2.CellID]bool
 }
 
@@ -122,7 +122,7 @@ func NewFlatCoverer(level int) *FlatCoverer {
 	}}
 }
 
-func (c *FlatCoverer) Covering(r s2.Region) ( cover s2.CellUnion ){
+func (c *FlatCoverer) Covering(r s2.Region) (cover s2.CellUnion) {
 	cellUnions := c.FastCovering(r.CapBound())
 	for _, cellID := range cellUnions {
 		cell := s2.CellFromCellID(cellID)
