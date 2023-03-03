@@ -3,9 +3,9 @@ package geo_fencer
 import (
 	"fmt"
 
-	"github.com/karmadon/geo"
+	"github.com/stremovskyy/geo"
 
-	"github.com/karmadon/geo_fencer/drivers"
+	"github.com/stremovskyy/geo_fencer/drivers"
 )
 
 type GeoFence interface {

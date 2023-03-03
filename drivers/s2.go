@@ -2,7 +2,7 @@ package drivers
 
 import (
 	"github.com/golang/geo/s2"
-	"github.com/karmadon/geo"
+	"github.com/stremovskyy/geo"
 )
 
 type S2fence struct {

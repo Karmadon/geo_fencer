@@ -1,7 +1,7 @@
 package drivers
 
 import (
-	"github.com/karmadon/geo"
+	"github.com/stremovskyy/geo"
 )
 
 type box struct {

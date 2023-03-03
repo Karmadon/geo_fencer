@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/karmadon/geo"
-	"github.com/paulmach/go.geojson"
+	geojson "github.com/paulmach/go.geojson"
+	geo "github.com/stremovskyy/geo"
 )
 
-//FenceIndex is a dictionary of multiple fences. Useful if you have multiple data sets that need to be searched
+// FenceIndex is a dictionary of multiple fences. Useful if you have multiple data sets that need to be searched
 type FenceIndex interface {
 	// Set the GeoFence
 	Set(name string, fence GeoFence)

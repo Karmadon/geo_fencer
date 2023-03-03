@@ -1,6 +1,6 @@
 package drivers
 
-import "github.com/karmadon/geo"
+import "github.com/stremovskyy/geo"
 
 type BruteFence struct {
 	features []*geo.Feature
